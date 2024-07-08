@@ -8,14 +8,3 @@ const routes = {
   "ghcr.ikankan.eu.org": "https://ghcr.io",
   "cloudsmith.ikankan.eu.org": "https://docker.cloudsmith.io",
 };
-import DOCS from './help.html'
- 
-// return docs
-if (url.pathname === "/") {
-  return new Response(DOCS, {
-    status: 200,
-    headers: {
-      "content-type": "text/html"
-    }
-  });
-}
